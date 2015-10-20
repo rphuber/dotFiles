@@ -3,7 +3,7 @@
 "==============================================================================
 "
 " Author:       Ryan Huber
-" Source:       https://github.com/rphuber/dotFiles/new/master
+" Source:       https://github.com/rphuber/dotFiles/
 "
 "------------------------------------------------------------------------------
 
