@@ -25,20 +25,27 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
+
+"-------------------------------------------------------------------------------
+" Vundle Setup
+"-------------------------------------------------------------------------------
+
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'auto-pairs'
 Plugin 'syntastic'
 Plugin 'surround.vim'
-Plugin 'Javascript-Libraries-Syntax'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'othree/html5.vim'
-Plugin 'mattn/emmet-vim'
+Plugin 'othree/yajs.vim'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'pangloss/vim-javascript'
 Plugin 'Yggdroot/indentLine'
 Plugin 'digitaltoad/vim-pug'
+Plugin 'HerringtonDarkholme/yats.vim'
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
@@ -55,6 +62,8 @@ Plugin 'digitaltoad/vim-pug'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+
+
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 " filetype plugin on
