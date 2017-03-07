@@ -3,7 +3,7 @@
 "==============================================================================
 "
 " Author:       Ryan Huber
-" Source:       https://github.com/rphuber/dotFiles/ 
+" Source:       https://github.com/rphuber/dotFiles/
 "
 "------------------------------------------------------------------------------
 "
@@ -34,18 +34,20 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'auto-pairs'
-Plugin 'syntastic'
 Plugin 'surround.vim'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'mxw/vim-jsx'
-Plugin 'othree/html5.vim'
-Plugin 'othree/yajs.vim'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'pangloss/vim-javascript'
 Plugin 'Yggdroot/indentLine'
-Plugin 'digitaltoad/vim-pug'
-Plugin 'HerringtonDarkholme/yats.vim'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+Plugin 'othree/html5.vim'
+Plugin 'digitaltoad/vim-pug'
+Plugin 'pangloss/vim-javascript'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'jparise/vim-graphql'
+Plugin 'HerringtonDarkholme/yats.vim'
+Plugin 'maxmellon/vim-jsx-pretty'
+
+Plugin 'elixir-lang/vim-elixir'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
@@ -80,7 +82,7 @@ filetype plugin indent on    " required
 
 " Javascript Syntax Formatting
 set concealcursor=nc
-" set conceallevel=1
+set conceallevel=1
 let g:jsx_ext_required = 0
 " let g:javascript_conceal_null       = "ø"
 " let g:javascript_conceal_this       = "@"
@@ -89,14 +91,8 @@ let g:jsx_ext_required = 0
 " let g:javascript_conceal_NaN        = "ℕ"
 " let g:javascript_conceal_prototype  = "¶"
 " let g:javascript_conceal_static     = "•"
+let g:vim_jsx_pretty_colorful_config = 1
 "------------------------------------------------------------------------------
-
-" Syntax linting
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['eslint']
 
 " Gitgutter
 let g:gitgutter_sign_added = '+'
@@ -148,6 +144,7 @@ set clipboard=unnamed
 "-----------------------------------------------------------------------------
 set tabstop=2
 set shiftwidth=2
+set expandtab
 set softtabstop=2
 
 "------------------------------------------------------------------------------
